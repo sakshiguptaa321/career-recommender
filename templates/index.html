@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Career Recommender</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-100 to-purple-200 min-h-screen">
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center text-center px-6 py-20">
+    <h1 class="text-4xl md:text-5xl font-bold text-indigo-800">🚀 AI Career Recommender</h1>
+    <p class="mt-4 text-lg text-gray-700 max-w-xl">Enter your skills and get personalized tech career suggestions with growth paths, tools, and opportunities!</p>
+  </section>
+
+  <!-- Skill Input Form -->
+  <section class="flex justify-center mb-10">
+    <form method="POST" action="/recommend" class="bg-white shadow-xl rounded-xl px-6 py-8 w-full max-w-2xl">
+      <label for="skills" class="block mb-2 text-lg font-semibold text-gray-700">🔧 Enter your skills (comma or space separated):</label>
+      <input type="text" id="skills" name="skills" placeholder="e.g. python, html, sql" required class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg">Recommend Careers</button>
+    </form>
+  </section>
+
+  <!-- How It Works -->
+  <section class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center text-indigo-800 mb-8">🔍 How It Works</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-indigo-50 p-6 rounded-lg shadow text-center">
+          <h3 class="text-lg font-bold text-indigo-700 mb-2">1. Analyze Your Skills</h3>
+          <p class="text-gray-600">Enter your current skills and we’ll analyze your fit for various tech roles.</p>
+        </div>
+        <div class="bg-indigo-50 p-6 rounded-lg shadow text-center">
+          <h3 class="text-lg font-bold text-indigo-700 mb-2">2. Recommend Careers</h3>
+          <p class="text-gray-600">We’ll show career options with score, required tools, and salary insights.</p>
+        </div>
+        <div class="bg-indigo-50 p-6 rounded-lg shadow text-center">
+          <h3 class="text-lg font-bold text-indigo-700 mb-2">3. Guide Your Growth</h3>
+          <p class="text-gray-600">Get curated roadmaps, free resources, and downloadable insights to grow faster.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-600 py-6 text-sm">
+    Made with ❤️ by Sakshi Gupta · <a href="https://github.com/yourusername/career-recommender" class="text-indigo-600 underline">GitHub</a>
+  </footer>
+</body>
+</html>
