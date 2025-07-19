@@ -44,19 +44,32 @@ career-recommender/
    cd career-recommender
    ```
 
-2. **Install dependencies:**
+2. **Create and activate a virtual environment (recommended):**
+
+   ```bash
+   # Create a virtual environment named 'venv'
+   python -m venv venv
+
+   # Activate the virtual environment (Windows)
+   venv\Scripts\activate
+
+   # Activate the virtual environment (macOS/Linux)
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies:**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the Flask server:**
+4. **Run the Flask server:**
 
    ```bash
    python app.py
    ```
 
-4. **Open your browser and go to:**
+5. **Open your browser and go to:**
    http://127.0.0.1:5000
 
 ## 👩‍💻 Future Improvements
